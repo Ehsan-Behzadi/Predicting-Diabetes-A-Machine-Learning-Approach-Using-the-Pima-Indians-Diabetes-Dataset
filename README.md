@@ -11,8 +11,6 @@ This repository features a machine learning model trained on the Pima Indians Di
 - [Results and Performance](#results-and-performance)
 - [Usage Instructions](#usage-instructions)
 - [Future Work](#future-work)
-- [Acknowledgments](#acknowledgments)
-
 
 ## Project Overview
 
