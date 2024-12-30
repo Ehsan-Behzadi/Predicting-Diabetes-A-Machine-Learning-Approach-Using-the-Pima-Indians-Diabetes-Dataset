@@ -2,14 +2,16 @@
 
 This repository features a machine learning model trained on the Pima Indians Diabetes dataset, which contains various medical attributes of female patients. The aim of this project is to accurately predict the likelihood of diabetes using attributes such as glucose level, blood pressure, body mass index (BMI), age, and more. The model employs established machine learning techniques to analyze these features and provide insights into diabetes risk, making it a valuable tool for healthcare professionals and researchers in understanding diabetes prevalence.  
 
-## Table of Contents
+## Table of Contents  
 
-- [Project Overview](#project-overview)
-- [Dataset Description](#dataset-description)
-- [Installation Instructions](#installation-instructions)
-- [Model and Techniques](#model-and-techniques)
-- [Results and Performance](#results-and-performance)
-- [Usage Instructions](#usage-instructions)
+- [Project Overview](#project-overview)  
+- [Dataset Description](#dataset-description)  
+- [Installation Instructions](#installation-instructions)  
+- [Model and Techniques](#model-and-techniques)  
+  - [Improvements](#improvements)  
+    - [KNN Imputation Method for Missing Values](#knn-imputation-method-for-missing-values)  
+- [Results and Performance](#results-and-performance)  
+- [Usage Instructions](#usage-instructions)  
 - [Future Work](#future-work)
 
 ## Project Overview
@@ -43,12 +45,24 @@ To install these libraries, you can use pip:
 pip install pandas numpy scikit-learn matplotlib seaborn imblearn
 ```
 
-## Model and Techniques
+## Model and Techniques  
 
-This project utilizes a Naive Bayes classifier to predict diabetes. Key steps include:
-- Data pre-processing: Handling missing values, detecting outliers, data normalization and balancing, feature selection to identify the most significant attributes, and splitting the data into training and testing sets.
-- Model training: Using a Naive Bayes classifier to train the model on the training set.
-- Model evaluation: Assessing the model's performance using accuracy, precision, recall, F1-score, classification report, confusion matrix and AUC score.
+This project utilizes a Naive Bayes classifier to predict diabetes. Key steps include:  
+- Data pre-processing: Handling missing values, detecting outliers, data normalization and balancing, feature selection to identify the most significant attributes, and splitting the data into training and testing sets.  
+- Model training: Using a Naive Bayes classifier to train the model on the training set.  
+- Model evaluation: Assessing the model's performance using accuracy, precision, recall, F1-score, classification report, confusion matrix, and AUC score.  
+
+## Improvements  
+
+In this project, several improvements have been made to enhance the data preprocessing and model performance processes. 
+
+1. **KNN Imputation for Missing Values.**
+
+## KNN Imputation Method for Missing Values  
+
+In this update, I have added a new method for handling missing values using KNN Imputation. This method improves the data preprocessing step by providing a more robust way to impute missing values based on the nearest neighbors. The benefits of KNN Imputation are:  
+- **Preservation of Relationships**: KNN considers the similarity of data points, which helps maintain the relationships between features when imputing missing values.  
+- **Improved Model Performance**: Proper handling of missing data can lead to enhanced model accuracy and reliability.
 
 ## Results and Performance
 
